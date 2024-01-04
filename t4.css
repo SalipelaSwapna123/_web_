@@ -1,0 +1,35 @@
+body{
+   
+    padding:0;
+    margin: 0;
+}
+.header{
+    height:60px;
+    background-color:rgb(65, 114, 115);
+    position: sticky;
+    top:0;
+}
+.main{
+    height:800px;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 200px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+
+}
+a{
+    color:blue;
+    font-weight: bold;
+}
+
+.footer{
+    height:60px;
+    background-color:rgb(130, 194, 232);
+    text-align: center;
+    padding-top: 20px;
+}

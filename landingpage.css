@@ -1,0 +1,63 @@
+header{
+    width:100%;
+    height:100vh;
+    background: url(img.jpg);
+    background-size: cover;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+nav{
+    width:100%;
+    height:100px;
+    
+    /*color: wheet;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: plum;
+}
+.menu a{
+    text-decoration: none;
+    color: wheat;
+    padding: 15px;
+    font-size: 25px;
+}
+.register a{
+    text-decoration: none;
+    color: wheat;
+    padding: 15px;
+    font-size: 25px;
+    background: orangered;
+    border-radius: 10px;
+}
+.register a:hover{
+    border: 1px solid orangered;
+    background: transparent;
+}
+    
+
+.abc{
+    position: absolute;
+    top: 50%;
+    left:40%;
+    /*max-width: 650px;*/
+    transform: translate(-50% -50%);
+    text-align: center;
+    color:brown;
+}
+.abc h1{
+    font-size: 50px;
+}
+.abc a{
+    text-decoration: none;
+    background: orangered;
+    padding: 15px 20px;
+    letter-spacing: 3px;
+}
+.abc span{
+    font-size: 50px;
+}

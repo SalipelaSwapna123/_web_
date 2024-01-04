@@ -1,0 +1,61 @@
+<!-- then(): This method is used to handle the
+     fulfillment of a promise. It takes two optional arguments, 
+     onFulfilled and onRejected, which are callback functions that will
+      be executed when the promise is fulfilled or rejected, respectively. -->
+
+      <!-- catch(): This method is used to handle the rejection of a promise. It takes one argument,
+         onRejected, which is a callback function that will be executed when the promise is rejected. -->
+
+
+
+
+
+         <!-- The code snippet creates a new promise called myPromise using the Promise constructor. The constructor takes a function as an argument, commonly referred to as the "executor function". The executor function has two parameters, myResolve and myReject, which are functions provided by the JavaScript runtime.
+
+Inside the executor function, you typically perform some asynchronous or time-consuming task, referred to as the "producing code". In this case, the producing code is simplified and does not involve any asynchronous operations. It immediately calls myResolve() to indicate that the promise has been successfully fulfilled, and myReject() to indicate that an error has occurred.
+
+After the promise is created, the "consuming code" follows. The then() method is called on the promise to handle the fulfillment or rejection of the promise. The then() method takes two callback functions as arguments. The first callback function is executed if the promise is fulfilled successfully, and the second callback function is executed if the promise is rejected.
+
+In the provided example, the callback functions are represented as anonymous functions, denoted by function(value) { /* code if successful */ } and function(error) { /* code if some error */ }. These functions can be replaced with actual code that needs to be executed when the promise is fulfilled or rejected.
+
+Note that in this particular example, the promise is immediately resolved using myResolve() and rejected using myReject(). In practice, promises are typically used for asynchronous operations, such as fetching data from an API or reading a file, where the fulfillment or rejection of the promise depends on the result of the asynchronous task.
+
+ -->
+ <!DOCTYPE html>
+ <html>
+ <body>
+ 
+ <h2>JavaScript Promise</h2>
+ 
+ <p id="demo"></p>
+ 
+ <script>
+ function myDisplayer(some) {
+   document.getElementById("demo").innerHTML = some;
+ }
+ 
+ let myPromise = new Promise(function(myResolve, myReject) {
+   let x = 0;
+ 
+ // some code (try to change x to 5)
+ 
+   if (x == 0) {
+     myResolve("OK");
+   } else {
+     myReject("Error");
+   }
+ });
+ 
+ myPromise.then(
+   function(value) {myDisplayer(value);},
+   function(error) {myDisplayer(error);}
+ );
+ </script>
+ 
+ </body>
+ </html>
+
+
+
+ <!-- Promises are used to handle asynchronous operations in JavaScript in manageable and storeable way -->
+ 

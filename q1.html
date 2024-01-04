@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  
+  font-size: 60px;
+  margin-top: 0px;
+}
+body{
+background-image:url('deep learning.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2023 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+function submit(){
+   window.location("final.html");
+}
+
+</script>
+<body>
+<form action ="abc.html" method="post">
+  <h2>Question 1:</h2>
+
+  <p style="font-size:20px;">The “Father of Artificial Intelligence” is:</p>
+  <label>
+    <input type="radio" name="q1" value="a">
+    Alan Turing<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q1" value="b">
+    charles Babbage<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q1" value="c">
+    John McCarthy<br><br>
+  </label>
+
+  <h2>Question 2:</h2>
+  <p style="font-size:20px;">Blind Search can be used for which of the following situations?</p>
+  <label>
+    <input type="radio" name="q2" value="a">
+    Small Search Space<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q2" value="b">
+    Real-Life Simulation<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q2" value="c">
+    Advanced Game Theory<br><br>
+  </label>
+  <h2>Question 3:</h2>
+  <p style="font-size:20px;">In how many category processes is Artificial Intelligence classified in?
+</p>
+  <label>
+    <input type="radio" name="q3" value="a">
+    5<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q3" value="b">
+    2<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q3" value="c">
+    3<br><br>
+  </label>
+ <h2>Question 4:</h2>
+  <p style="font-size:20px;">In how many category processes is Artificial Intelligence classified in?</p>
+  <label>
+    <input type="radio" name="q4" value="a">
+    Python<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q4" value="b">
+    Java<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q4" value="c">
+    Lisp<br><br>
+  </label>
+<h2>Question 5:</h2>
+  <p style="font-size:20px;">Which of the following symbols in AI are logical symbols?</p>
+  <label>
+    <input type="radio" name="q5" value="a">
+    Negation<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q5" value="b">
+    conjunction<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q5" value="c">
+    All Of The Above<br><br>
+  </label>
+ <button onclick="submit()">SUBMIT</button>
+</form>
+</body>
+</html>

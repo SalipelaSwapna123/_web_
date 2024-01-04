@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+.div1{
+text-align: left;
+color: white;
+font-style:italic;
+}
+.div2{
+ text-align: center;
+ color: pink;
+font-style:italic;
+}
+.div3{
+ text-align: center;
+ color: white;
+font-style:italic;
+}
+.div4{
+ text-align: right;
+ color: white;
+font-style:italic;
+}
+body{
+background-image: url("main.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+button{
+   font-size:24px;
+}
+</style>
+</head>
+<body>
+
+<div class="div2">
+   <h1><b>Online Test</b></h1><br><br><br>
+</div>
+<button onclick="adminpage()">ADMIN LOGIN</button>
+<center><button onclick="loginpage()">STUDENT LOGIN</button></center>
+<div class="div4">
+<button onclick="contact()">CONTACT US</button>
+</div>
+	
+<script>
+  function adminpage(){
+     window.location="LOGIN PAGE STEP ONE.html"
+}
+function loginpage(){
+     window.location="loginform.html"
+}
+function contact(){
+window.location="contact.html"
+}
+     
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+img{
+    
+    position:absolute;
+    top:0;
+    right:0;
+    margin: 10px;
+    width:150px;
+    height:150px;
+
+}
+.container{
+    background-color: #487371cc;
+    height: 700px;
+   
+}
+.p1{
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin: 20px;
+}
+.p2{
+    position: absolute;
+    top:300px;
+    left:100px;
+   right:100px;
+}

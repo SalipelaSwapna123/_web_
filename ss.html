@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body{
+background-image:url('dashboardimage.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+.div1{
+   color:pink;
+    font-style:bold;
+    font-size:80px;
+}
+button{
+   font-size:24px;
+}
+</style>
+</head>
+<body>
+
+<section id="sidebar">
+<h1>
+<div class="div1" >Student Dashboard</div></h1>
+<button onclick="schedule()">SCHEDULE</button><br><br>
+<button onclick="score()">SCORE</button>
+<script>
+function schedule(){
+  window.location="scedule3.html"
+}
+function score(){
+  window.location="score.html"
+}
+</script>
+</body>
+</section>

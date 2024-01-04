@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    padding-top: 100px;
+}
+
+img{
+    width:250px;
+    height: 250px;
+   
+}
+.img:hover{
+    transform: scale(1.2);
+}
+.img{
+    transition: transform 1.3s ease;
+}
+.main{
+    background-color: lightgray;
+    text-align: center;
+}

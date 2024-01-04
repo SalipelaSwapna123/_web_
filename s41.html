@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EXAM MODE</title>
+</head>
+<style type="text/css">
+body{
+background-image:url('dropdown image.jpeg');
+select#portfolio{
+font-size:50px;
+color:black;
+
+}
+</style>
+</body>
+<center
+<form name="webpage">
+<select name="portfolio" id="portfolio">
+<option value="#" selected>select the exam type</option>
+<option  href="#" value="description.html">DESCRIPTION</option>
+<option href="#" value="MCQ.html">MCQ</option>
+</center>
+</select>
+</form>
+<script type ="text/javascript">
+var urlMenu = document.getElementById('portfolio');
+urlMenu.onchange = function()
+{
+var userOption = this.options[this.selectedIndex];
+if (userOption.value != "nothing")
+{
+window.open(userOption.value, "HTML CSS javascript", "");
+}
+}
+
+</script>
+</html>

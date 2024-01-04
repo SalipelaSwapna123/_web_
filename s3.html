@@ -1,0 +1,134 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  
+  font-size: 60px;
+  margin-top: 0px;
+}
+body{
+background-image:url('deep learning.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+}
+</style>
+</head>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 3, 2023 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+function submit(){
+   window.location("final.html");
+}
+
+</script>
+
+<body>
+    <form action ="abc.html" method="post">
+
+          <h2>Question 1:</h2>
+
+  <p style="font-size:20px;">What are the main components of big data?</p>
+  <label>
+    <input type="radio" name="q1" value="a">
+    HDFS<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q1" value="b">
+    Map reduce<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q1" value="c">
+    All the above<br><br>
+  </label>
+
+  <h2>Question 2:</h2>
+  <p style="font-size:20px;">On which of the following platforms does hadoop run?</p>
+  <label>
+    <input type="radio" name="q2" value="a">
+    Debian<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q2" value="b">
+    Cross-platform<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q2" value="c">
+    Unix-like<br><br>
+  </label>
+  <h2>Question 3:</h2>
+  <p style="font-size:20px;">Data in_____bytes size is called big data?
+</p>
+  <label>
+    <input type="radio" name="q3" value="a">
+    peta<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q3" value="b">
+    tera<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q3" value="c">
+    gega<br><br>
+  </label>
+ <h2>Question 4:</h2>
+  <p style="font-size:20px;">Transaction of data of the bank is a type of?</p>
+  <label>
+    <input type="radio" name="q4" value="a">
+    Unstructured data<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q4" value="b">
+    Structured data<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q4" value="c">
+    Both A & B<br><br>
+  </label>
+<h2>Question 5:</h2>
+  <p style="font-size:20px;">The total forms of Big data is____</p>
+  <label>
+    <input type="radio" name="q5" value="a">
+    3<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q5" value="b">
+    2<br><br>
+  </label>
+  <label>
+    <input type="radio" name="q5" value="c">
+    1<br><br>
+  </label>
+        <button onclick="submit()">SUBMIT</button>
+</form>
+</body>
+</html>

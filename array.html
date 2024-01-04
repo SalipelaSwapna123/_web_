@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+const Myname = ["swapna", "swathi", "sunandha", "spandana"];
+let size = Myname.length;
+const Mynames = ["swapna", "swathi", "sunandha", "spandana"];
+const Myname1 = ["swapna", "swathi", "sunandha", "spandana"];
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = size;
+document.getElementById("demo1").innerHTML = Mynames.toString();
+document.getElementById("demo2").innerHTML = Myname1.join(" * ");
+document.getElementById("demo3").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo4").innerHTML = fruits;
+</script>
+
+
+</body>
+</html>

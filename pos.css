@@ -1,0 +1,74 @@
+html,bod{
+height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+background-color: lightgray;
+}
+.parent{
+    height: 100px;
+    width: 200px;
+    background-color: lightpink;
+    border: 1px solid black;
+    position:relative;
+    /* top left */
+    /* margin-bottom: om right; */
+    top: 100px;
+    left: 100px;
+   
+    /* only use this when we want to change the posiyion of the html element related to its original position */
+}
+/* absolute works on child element whose parent is relative in position */
+.child{
+    height: 30%;
+    width: 35%;
+    background-color: lavenderblush;
+    border:1px solid black;
+    position: absolute;
+   top: 10px;
+   left: 10px;
+}
+.chatbot
+{
+    display: flex;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    background-color: red;
+    border-radius: 20%;
+    /* top:0;
+    left:0; */
+    margin:40px;
+   
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    opacity: 0.7;
+    position:fixed;
+    right:0;
+    bottom:0;
+
+}
+.stick{
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: blue;
+    position: sticky;
+   top: 0;
+   left: 0;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border: 1px solid black;
+    transition: 0.6;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
